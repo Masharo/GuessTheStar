@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TopStar</string>
+    <string name="address_site">https://www.forbes.ru/rating/403469-40-samyh-uspeshnyh-zvezd-rossii-do-40-let-reyting-forbes</string>
+    <string name="error_main_countgroups">Во время обработки запроса произошла ошибка</string>
+    <string name="imageview_main_description">Изображенеи медийной личности</string>
+    <string name="text_main_win">Вы абсолютно правы</string>
+    <string name="text_main_lose">Неверный ответ</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/grey_light"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/image_main_artistimage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/kreed"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/imageview_main_description"/>
+
+    <Button
+        android:id="@+id/button_main_id1"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="6dp"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Егор Крид" />
+
+    <Button
+        android:id="@+id/button_main_id2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:backgroundTint="@color/grey"
+        android:layout_marginBottom="6dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Егор Крид" />
+
+    <Button
+        android:id="@+id/button_main_id3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:backgroundTint="@color/grey"
+        android:layout_marginBottom="6dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Егор Крид" />
+
+    <Button
+        android:id="@+id/button_main_id4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Егор Крид"
+        android:layout_marginBottom="50dp"/>
+
+</LinearLayout>
