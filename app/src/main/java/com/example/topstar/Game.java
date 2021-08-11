@@ -2,8 +2,9 @@ package com.example.topstar;
 
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Random;
+
+//Класс управляющий игрой
 
 public class Game {
 
@@ -17,6 +18,7 @@ public class Game {
         ides = new HashSet<>();
     }
 
+    //получаем случайную звезду и положение
     public void rollStar() {
         ides.clear();
 

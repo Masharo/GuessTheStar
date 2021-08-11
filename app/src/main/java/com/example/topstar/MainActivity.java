@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         return htmlDoc;
     }
 
+    //Получем нужные данные из html
     private ArrayList<Star> parseData(@NonNull String htmlDoc) {
 
         Pattern regSearchBlock = Pattern.compile("<div class=\"top10\">(.*?)<div class=\"clear\">");
@@ -124,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
         return starMap;
     }
 
+    //получаем фото звезды
     private void imageInstance() {
         Star win = game.getWinner();
 
@@ -151,6 +153,7 @@ public class MainActivity extends AppCompatActivity {
         instanceState();
     }
 
+    //Обновляем состояние игры
     private void instanceState() {
         game.rollStar();
         imageInstance();
@@ -167,10 +170,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Определяем где лежат индексы начала и конца строки
     private int startAndEndRegex(Matcher matcher) {
         return matcher.start(1) != -1 ? 1 : 2;
     }
 
+    //Получаем фото
     private static class ImageLoadInternet extends AsyncTask<String, Void, Bitmap> {
 
         @Override
@@ -206,6 +211,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Получаем html
     private static class DataLoadInternet extends AsyncTask<String, Void, String> {
 
         @Override
